@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero';
 import Modal from './Components/Modal';
 import { createBrowserRouter } from 'react-router-dom'
+import Project from './Components/Project';
+
 
 const App = () => {
 const [theme, settheme] = useState('lucide-moon');
@@ -13,6 +15,7 @@ const [theme, settheme] = useState('lucide-moon');
       }`} >
      <Navbar theme={theme} settheme={settheme} />
      <Hero theme={theme} settheme={settheme}/>
+     <Project/>
    </div>
     
     </>
