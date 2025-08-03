@@ -6,7 +6,7 @@ import About from '../About'
 const Hero = ({ theme, settheme }) => {
   return (
     <>
-      <div className="w-full h-screen flex justify-center items-center text-xl">
+      <div className="w-full h-[90vh] flex justify-center items-center text-xl">
         <div className="flex flex-col sm:flex-row justify-between items-center w-full sm:w-1/2 mx-auto px-4 py-3 uppercase gap-4">
           <div className="left flex-1 flex sm:flex-col flex-row normal-case mb-15 sm:mb-0  text-center">
             <img  className='h-1/2 w-1/2' src={codeguy} alt="" />
