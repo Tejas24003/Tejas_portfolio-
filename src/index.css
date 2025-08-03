@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+
+.container.dark{
+    background: #222;
+}
