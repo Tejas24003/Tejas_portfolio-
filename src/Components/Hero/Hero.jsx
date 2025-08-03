@@ -12,7 +12,7 @@ const Hero = ({ theme, settheme }) => {
             <img  className='h-1/2 w-1/2' src={codeguy} alt="" />
             <div className='flex  flex-col sm:ml-1 mt-8 ml-4'>
               <button className="bg-gradient-to-r sm:w-1/2 w-full mb-2 from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300">
-                 <a href="https://drive.google.com/file/d/1KpjXgqvm6Pn6KTAbJTo_dhqND8pjqjCW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                 <a href="https://drive.google.com/file/d/1HmguiPTm92pGUIKqS0S_kikydgEkzBVY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     Resume
                    </a>
              </button>
