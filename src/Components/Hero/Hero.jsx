@@ -8,7 +8,7 @@ const Hero = ({ theme, settheme }) => {
     <>
       <div className="w-full h-screen flex justify-center items-center text-xl">
         <div className="flex flex-col sm:flex-row justify-between items-center w-full sm:w-1/2 mx-auto px-4 py-3 uppercase gap-4">
-          <div className="left flex-1 flex sm:flex-col flex-row normal-case  text-center">
+          <div className="left flex-1 flex sm:flex-col flex-row normal-case mb-15 sm:mb-0  text-center">
             <img  className='h-1/2 w-1/2' src={codeguy} alt="" />
             <div className='flex  flex-col sm:ml-1 mt-8 ml-8'>
               <button className="bg-gradient-to-r sm:w-1/2 w-full mb-2 from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300">
@@ -16,7 +16,7 @@ const Hero = ({ theme, settheme }) => {
                     Resume
                    </a>
              </button>
-             <button className="bg-gradient-to-r sm:w-1/2 w-full from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300"><Modal/></button>
+             <button className="bg-gradient-to-r sm:w-1/2 w-full from-indigo-500 to-purple-500 text-white mb-2.5 font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300"><Modal/></button>
                
 
             </div>
