@@ -23,3 +23,24 @@
 }
 
 
+
+@keyframes marqueeLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: 200%;
+  animation: marqueeLoop 20s linear infinite;
+}
+
+.marquee-group {
+  flex-shrink: 0;
+  display: flex;
+}
+

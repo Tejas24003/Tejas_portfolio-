@@ -8,7 +8,11 @@ import java from '../assets/java.svg'
 import cpp from '../assets/cpp.svg'
 import css from '../assets/css.svg'
 import git from '../assets/git.svg'
+import html5 from '../assets/HTML5.svg'
 import nodejss from '../assets/nodejss.svg'
+import php from '../assets/php.svg'
+import python from '../assets/python.svg'
+import react from '../assets/react.svg'
 const Project = () => {
   return (
     <>
@@ -23,7 +27,7 @@ const Project = () => {
   <img
     src={coding}
     alt="Coding"
-    className="absolute inset-0 w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full opacity-40 object-cover"
   />
 
   {/* Overlay Content */}
@@ -34,27 +38,56 @@ const Project = () => {
         Code Is Craft
       </h2>
       <p className="text-amber-50  mt-2 leading-relaxed drop-shadow-sm">
-        Every line of code is a chance to innovate, solve problems, and make a difference.
+        Every line of code is a chance to innovate, solve problems, and make a difference. <br />
+        <br />
+        I build practical, high-performance solutions—from secure authentication to dynamic content management—using React, Tailwind CSS, Flutter, PHP, Java, and Python. I'm always eager to learn and improve.
       </p>
     </div>
   </div>
 </div>
 
           <div className="bg-gradient-to-r from-[#1f1a33] to-[#363046]  flex flex-wrap rounded-xl shadow-lg space-y-4">
-     <img src={fle} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
+     <img src={html5} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
           <img src={css} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
           <img src={js} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={fle} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
+          <img src={react} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
           <img src={nodejss} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={fle} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
+          <img src={php} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
           <img src={git} alt="" className='h-14 mt-2 ml-2  cursor-pointer' />
           <img src={java} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
           <img src={cpp} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={fle} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
+          <img src={python} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
           <img src={fle} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
 </div>
 
-          <div className="bg-white p-0 rounded-xl  shadow-md"> </div>
+       <div className="bg-white rounded-xl shadow-md overflow-hidden">
+  <div className="marquee-track flex gap-12 px-4 py-3">
+    <div className="marquee-group flex gap-12">
+      <span className="text-base sm:text-xl font-bold mt-2  text-gray-700 whitespace-nowrap">UI Design</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UX Research</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Wireframes</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Prototypes</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Design Systems</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Figma</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Adobe XD</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">User Flows</span>
+    </div>
+
+    {/* Duplicate for seamless loop */}
+    <div className="marquee-group flex gap-12" aria-hidden="true">
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UI Design</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UX Research</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Wireframes</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Prototypes</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Design Systems</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Figma</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Adobe XD</span>
+      <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">User Flows</span>
+    </div>
+  </div>
+</div>
+
+
          
         </div>
       </div>
