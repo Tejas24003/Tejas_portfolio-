@@ -29,8 +29,11 @@ const Hero = ({ theme, settheme }) => {
             <About/>
           
           </div>
+          
         </div>
+        
       </div>
+      <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
     </>
   )
 }
