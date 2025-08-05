@@ -46,19 +46,101 @@ const Project = () => {
   </div>
 </div>
 
-          <div className="bg-gradient-to-r from-[#1f1a33] to-[#363046]  flex flex-wrap rounded-xl shadow-lg space-y-4">
-     <img src={html5} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={css} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={js} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={react} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={nodejss} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={php} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={git} alt="" className='h-14 mt-2 ml-2  cursor-pointer' />
-          <img src={java} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={cpp} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={python} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
-          <img src={fle} alt="" className='h-14 mt-2 ml-2 cursor-pointer' />
+
+
+
+       <div className="bg-gradient-to-r from-[#1f1a33] to-[#363046] flex flex-wrap rounded-xl shadow-lg p-4 gap-4">
+  {/* HTML5 */}
+  <div className="relative group">
+    <img src={html5} alt="HTML5" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      HTML5
+    </span>
+  </div>
+
+  {/* CSS */}
+  <div className="relative group">
+    <img src={css} alt="CSS3" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      CSS3
+    </span>
+  </div>
+
+  {/* JavaScript */}
+  <div className="relative group">
+    <img src={js} alt="JavaScript" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      JavaScript
+    </span>
+  </div>
+
+  {/* React */}
+  <div className="relative group">
+    <img src={react} alt="React" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      React
+    </span>
+  </div>
+
+  {/* Node.js */}
+  <div className="relative group">
+    <img src={nodejss} alt="Node.js" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      Node.js
+    </span>
+  </div>
+
+  {/* PHP */}
+  <div className="relative group">
+    <img src={php} alt="PHP" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      PHP
+    </span>
+  </div>
+
+  {/* Git */}
+  <div className="relative group">
+    <img src={git} alt="Git" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      Git
+    </span>
+  </div>
+
+  {/* Java */}
+  <div className="relative group">
+    <img src={java} alt="Java" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      Java
+    </span>
+  </div>
+
+  {/* C++ */}
+  <div className="relative group">
+    <img src={cpp} alt="C++" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      C++
+    </span>
+  </div>
+
+  {/* Python */}
+  <div className="relative group">
+    <img src={python} alt="Python" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      Python
+    </span>
+  </div>
+
+  {/* Flutter */}
+  <div className="relative group">
+    <img src={fle} alt="Flutter" className="h-14 cursor-pointer" />
+    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+      Flutter
+    </span>
+  </div>
 </div>
+
+
+        
 
        <div className="bg-white rounded-xl shadow-md overflow-hidden">
   <div className="marquee-track flex gap-12 px-4 py-3">
