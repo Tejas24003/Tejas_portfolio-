@@ -40,7 +40,7 @@ const Project = () => {
       <p className="text-amber-50  mt-2 leading-relaxed drop-shadow-sm">
         Every line of code is a chance to innovate, solve problems, and make a difference. <br />
         <br />
-        I build practical, high-performance solutions—from secure authentication to dynamic content management—using React, Tailwind CSS, Flutter, PHP, Java, and Python. I'm always eager to learn and improve.
+        I build practical, high-performance solutions—from secure authentication to dynamic content management—using <b> React, Tailwind CSS, Flutter, PHP, Java, and Python  </b>. I'm always eager to learn and improve.
       </p>
     </div>
   </div>
@@ -91,6 +91,7 @@ const Project = () => {
          
         </div>
       </div>
+      
     </>
   );
 };
