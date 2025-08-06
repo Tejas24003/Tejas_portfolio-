@@ -1,12 +1,25 @@
 import React from "react";
+import { useState } from "react";
 import Modal from "../../Components/Modal";
 import codeguy from "../../assets/coding_guy-removebg-preview.png";
 import About from "../About";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+
+
 const Hero = ({ theme, settheme }) => {
+
+const [show, setShow] = useState(false)
+
+
+
+
   return (
     <>
+   
+
       <section className="w-full min-h-[80vh] flex items-center justify-center px-4 py-10">
+               {show &&<Modal  onclose={()=> setShow(false)} />}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-8">
           
           {/* Left - Image and Buttons */}
@@ -27,15 +40,16 @@ const Hero = ({ theme, settheme }) => {
                 Resume
               </a>
 
-              <button
+              <button onClick={() => setShow(true)}
                 className="flex-1 text-center text-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300"
               >
-                <Modal />
+             Contact
               </button>
+                
             </div>
           </div>
 
-          {/* Right - About Component */}
+         
           <div className="flex-1 max-w-md text-center lg:text-left">
             <About />
           </div>
