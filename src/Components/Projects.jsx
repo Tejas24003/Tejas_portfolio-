@@ -14,7 +14,7 @@ const Projects = () => {
           <div
             key={index}
             className={`relative border-none cursor-pointer hover:scale-101 rounded-lg shadow-lg overflow-hidden bg-center bg-cover
-              ${index === 1 ? "  md:row-span-2 " : "h-64"} 
+              ${index === 1 ? "  row-span-2 " : "h-64"} 
             `}
             style={{ backgroundImage: `url(${record.image})` }}
           >

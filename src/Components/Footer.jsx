@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Right section - Social links */}
           <div className="flex items-center justify-center  md:justify-end gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Tejas24003"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg transition-colors duration-200 hover:bg-footer-border hover:text-[#945DD6] group"
@@ -28,7 +28,7 @@ const Footer = () => {
               <Github className="w-5 h-5 text-footer-muted group-hover:text-footer-icon-hover transition-colors duration-200" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/tejas-srivastava-761a15215/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg transition-colors duration-200 hover:bg-footer-border hover:text-[#0A66C2] group"
