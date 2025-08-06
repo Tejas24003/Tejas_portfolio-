@@ -42,14 +42,15 @@ const Hero = ({ theme, settheme }) => {
         </div>
 
       </section>
-      <div className="w-full  flex items-center justify-center">
-      <DotLottieReact
-        src="https://lottie.host/a348641b-fc81-451e-b5f5-412ec81e58a4/R1sFNjVlaI.lottie"
-        loop
-        autoplay
-        style={{ width: "120px", height: "120px" }}
-      />
-    </div>
+      <div className="w-full flex items-center justify-center mt-[-38px] sm:mt-0">
+  <DotLottieReact
+    src="https://lottie.host/a348641b-fc81-451e-b5f5-412ec81e58a4/R1sFNjVlaI.lottie"
+    loop
+    autoplay
+    style={{ width: "120px", height: "120px" }}
+  />
+</div>
+
 
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-px w-full" />
     </>
