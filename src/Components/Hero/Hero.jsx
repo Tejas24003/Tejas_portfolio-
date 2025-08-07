@@ -4,6 +4,7 @@ import Modal from "../../Components/Modal";
 import codeguy from "../../assets/coding_guy-removebg-preview.png";
 import About from "../About";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { Mail, Download } from "lucide-react";
 
 const Hero = ({ theme, settheme }) => {
   const [show, setShow] = useState(false);
@@ -14,11 +15,11 @@ const Hero = ({ theme, settheme }) => {
         {show && <Modal onclose={() => setShow(false)} />}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-8">
           {/* Left - Image and Buttons */}
-          <div className="flex flex-col items-center lg:items-start flex-1 max-w-md gap-6">
+          <div className="flex flex-col  items-center flex-1 max-w-md gap-6">
             <img
               src={codeguy}
               alt="Developer Illustration"
-              className="w-52 md:w-64 xl:w-72 object-contain"
+              className="w-50 md:w-60 xl:w-70 object-contain"
             />
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -26,16 +27,18 @@ const Hero = ({ theme, settheme }) => {
                 href="https://drive.google.com/file/d/1HmguiPTm92pGUIKqS0S_kikydgEkzBVY/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 text-center text-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300"
+                className="group flex-1 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
-                Resume
+                <Download  />
+                Download Resume
               </a>
 
               <button
                 onClick={() => setShow(true)}
-                className="flex-1 text-center text-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 transition duration-300"
+                className="flex-1 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out animate-fade-in"
               >
-                Contact
+                <Mail className="mr-0.5" />
+                Get In Touch
               </button>
             </div>
           </div>

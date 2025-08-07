@@ -14,7 +14,7 @@ const [theme, settheme] = useState('lucide-moon');
   return (
     <>
    <div    className={`min-h-screen transition-colors duration-500 ${
-        theme === 'light' ? 'bg-[#FAF9F6] text-black' : 'bg-black text-white'
+        theme === 'light' ? 'bg-[ bg-gradient-to-tr from-white via-sky-100 to-blue-100] text-black' : 'bg-[     bg-gradient-to-br from-gray-800 via-gray-900 to-black  ] text-white'
       }`} >
      <Navbar theme={theme} settheme={settheme} />
      <Hero theme={theme} settheme={settheme}/>

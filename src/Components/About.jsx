@@ -19,6 +19,7 @@ const About = () => {
           user interfaces that feel modern and intuitive.
         </span>
       </p>
+      
     </div>
   );
 };
