@@ -14,8 +14,11 @@ const rec = [
     {
     id: 3,
     title: "Parking Analysis & Management System",
-    description:'Developed a full-stack web application for parking management and data analysis using PHP and SQL. Implemented secure admin login and session handling to restrict sensitive operations. Integrated Google Charts to analyze occupancy trends, revenue patterns, and peak-hour usage, turning raw data into actionable insights for improved space utilization and financial planning.',
-    technologies: [" HTML ,", "CSS ,", "JavaScript ,", "PHP ,", "MySQL"],
+    description:`Developed a full-stack parking management and analytics system using PHP, SQL, and Google Charts.
+The application features a secure admin login with session handling to restrict sensitive operations. Admins can record vehicle details, including owner name, vehicle type, number plate, entry time, and planned parking duration. The system automatically calculates the total amount based on the time parked, generates a real-time printable receipt, and stores all transactions in the database.
+
+ For analytics, Google Charts visualizes key insights such as vehicle type distribution, monthly revenue trends, and peak-hour occupancy patterns. This enables data-driven decision-making for optimizing parking space allocation, predicting busy periods, and improving revenue management. The platform is designed to be scalable, with features adaptable to user feedback and operational needs.`,
+     technologies: [" HTML ,", "CSS ,", "JavaScript ,", "PHP ,", "MySQL"],
     image: pr,
     link: "https://github.com/Tejas24003/parking_receipt-",
   },

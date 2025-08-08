@@ -1,6 +1,7 @@
 import React from "react";
 import records from "./Json";
 import { Code, Share } from "lucide-react";
+import { useState } from "react";
 
 const Projects = () => {
   return (
@@ -24,9 +25,10 @@ const Projects = () => {
               <p>
                 <strong>Title:</strong> {record.title}
               </p>
-              <p>
+              <p className="readmore">
                 <strong>Description:</strong> {record.description}
               </p>
+              <button   >Read more</button>
               <p>
                 <strong>Tech Stack:</strong>
                 {record.technologies}
