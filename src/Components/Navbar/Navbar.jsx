@@ -10,7 +10,7 @@ const Navbar = ({ theme, settheme }) => {
     <div
       className=" w-full h-15 flex justify-center items-center  text-xl ">
       <div className="flex fixed top-0  z-50  justify-between items-center w-full sm:w-1/2 mx-auto px-4 py-3 uppercase">
-        <div className="font-bold text-base">Tejas Srivastava</div>
+        <div className="font-bold text-xl">Tejas Srivastava</div>
 
         <button
           onClick={toggle_mode}

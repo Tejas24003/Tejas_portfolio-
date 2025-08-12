@@ -27,15 +27,15 @@ const Hero = ({ theme, settheme }) => {
                 href="https://drive.google.com/file/d/1HmguiPTm92pGUIKqS0S_kikydgEkzBVY/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex-1 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+                className="group  text-center flex justify-center items-center gap-0.5 text-lg  bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
-                <Download  />
+                <Download className="group-hover:animate-bounce" />
                 Download Resume
               </a>
 
               <button
                 onClick={() => setShow(true)}
-                className="flex-1 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out animate-fade-in"
+                className="flex-2/5 text-center flex justify-center items-center gap-0.5 text-lg border border-amber-50  font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out animate-fade-in"
               >
                 <Mail className="mr-0.5" />
                 Get In Touch
