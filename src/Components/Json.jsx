@@ -11,6 +11,14 @@ const rec = [
     image: ck,
     link: "https://rasoeefrontend.vercel.app/",
   },
+   {
+    id: 2,
+    title: "Grand Theft Auto VI (GTA-VI) Themed Animated Website",
+    description:" Built a GTA VI–inspired animated site using React, GSAP, and ScrollTrigger, featuring cinematic visuals, smooth scroll animations, and an interactive experience reflecting Rockstar’s iconic style.",
+    technologies: ["React ,","Tailwind ," ,"Gsap"],
+    image: gta,
+    link: "https://react01-sooty.vercel.app/",
+  },
     {
     id: 3,
     title: "Parking Analysis & Management System",
@@ -22,14 +30,7 @@ The application features a secure admin login with session handling to restrict 
     image: pr,
     link: "https://github.com/Tejas24003/parking_receipt-",
   },
-  {
-    id: 2,
-    title: "Grand Theft Auto VI (GTA-VI) Themed Animated Website",
-    description:" Built a GTA VI–inspired animated site using React, GSAP, and ScrollTrigger, featuring cinematic visuals, smooth scroll animations, and an interactive experience reflecting Rockstar’s iconic style.",
-    technologies: ["React ,","Tailwind ," ,"Gsap"],
-    image: gta,
-    link: "https://react01-sooty.vercel.app/",
-  },
+ 
 
 ];
 

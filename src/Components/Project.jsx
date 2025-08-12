@@ -22,7 +22,7 @@ const Project = () => {
 
       <div className="w-full  flex items-center  justify-center px-4 pt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-full">
-          <div className="relative overflow-hidden rounded-xl shadow-md bg-gradient-to-r from-[#1f1a33] to-[#363046] md:row-span-2 h-80 md:h-[22rem]">
+          <div className="hidden md:block relative overflow-hidden rounded-xl shadow-md bg-gradient-to-r from-[#1f1a33] to-[#363046] md:row-span-2 h-80 md:h-[22rem]">
             {/* Background Image */}
             <img
               src={coding}
