@@ -29,7 +29,7 @@ const Hero = ({ theme, settheme }) => {
                 rel="noopener noreferrer"
                 className="group  text-center flex justify-center items-center gap-0.5 text-lg  bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
-                <Download className="group-hover:animate-bounce" />
+                <Download className="group-hover:animate-bounce"  />
                 Download Resume
               </a>
 
