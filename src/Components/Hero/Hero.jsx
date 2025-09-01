@@ -79,7 +79,7 @@ const Hero = ({ theme, settheme }) => {
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
-                href="https://drive.google.com/file/d/1HmguiPTm92pGUIKqS0S_kikydgEkzBVY/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1RaqS6x8uiNtHJzbiR6mqfCjFcRTtijiD?usp=sharing"
                 target="_blank"
                 id="resume"
                 rel="noopener noreferrer"
