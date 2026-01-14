@@ -40,14 +40,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom section - Copyright */}
-        <div className="text-center pt-6 border-t border-footer-border">
-          <p className="text-sm text-footer-muted flex items-center justify-center gap-1 flex-wrap">
-            © 2025 Tejas Srivastava. Made with{" "}
-            <Heart className="w-4 h-4 text-footer-heart fill-footer-heart hover:text-red-500 animate-pulse" />{" "}
-            and lots of coffee.
-          </p>
-        </div>
+      
       </div>
     </footer>
   );
