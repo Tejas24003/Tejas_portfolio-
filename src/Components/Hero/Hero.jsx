@@ -63,48 +63,10 @@ const Hero = ({ theme, settheme }) => {
 
   return (
     <>
-      <section
-        ref={containerRef}
-        className="w-full min-h-[80vh] flex items-center justify-center px-4 py-10"
-      >
-        {show && <Modal onclose={() => setShow(false)} />}
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-8">
-          {/* Left - Image and Buttons */}
-          <div className="flex flex-col items-center flex-1 max-w-md gap-6">
-            <img
-              src={codeguy}
-              alt="Developer Illustration"
-              className="hero-img w-50 md:w-60 xl:w-70 object-contain"
-            />
+    <section className="flex w-full bg-amber-100 h-3">
 
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <a
-                href="https://drive.google.com/drive/folders/1RaqS6x8uiNtHJzbiR6mqfCjFcRTtijiD?usp=sharing"
-                target="_blank"
-                id="resume"
-                rel="noopener noreferrer"
-                className="group opacity-0 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
-              >
-                <Download className="group-hover:animate-bounce" />
-                Download Resume
-              </a>
-
-              <button
-                onClick={() => setShow(true)}
-                className="hero-bt opacity-0 text-center flex justify-center items-center gap-0.5 text-lg border border-amber-50 font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
-              >
-                <Mail className="mr-0.5" />
-                Get In Touch
-              </button>
-            </div>
-          </div>
-
-          {/* Right - About text */}
-          <div className="hero-text flex-1 max-w-md text-center lg:text-left">
-            <About />
-          </div>
-        </div>
-      </section>
+    </section>
+      
 
       {/* Lottie */}
       <div className="w-full flex items-center justify-center mt-[-38px] sm:mt-0">
