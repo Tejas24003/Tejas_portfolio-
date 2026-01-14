@@ -36,10 +36,9 @@ const About = () => {
 
       {/* Paragraph */}
       <p className="text-base md:text-xl font-light leading-relaxed">
-        I craft websites and mobile applications for diverse industries,&nbsp;
+   
         <span className="font-normal">
-          focusing on a modular design approach to build flexible and scalable
-          user interfaces that feel modern and intuitive.
+      I’m a full-stack web developer who crafts websites across diverse industries, using a modular design approach to create flexible, scalable, and user-centric digital experiences.
         </span>
       </p>
     </div>

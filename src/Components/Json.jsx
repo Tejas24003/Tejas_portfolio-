@@ -7,9 +7,10 @@ const rec = [
     id: 1,
     title: "Cloud Kitchen Website",
     description: "Developed a cloud kitchen platform with real-time cart, live location via APIs, and GSAP animations, achieving 30% faster load times and 40% higher user engagement.",
-   technologies: [" React,", "Tailwind CSS ,", "Firebase"],
+   technologies: ["Html",",","CSS",",","Javascript",",","Gsap"],
     image: ck,
     link: "https://rasoeefrontend.vercel.app/",
+   
   },
    {
     id: 2,
@@ -18,6 +19,7 @@ const rec = [
     technologies: ["React ,","Tailwind ," ,"Gsap"],
     image: gta,
     link: "https://react01-sooty.vercel.app/",
+    
   },
     {
     id: 3,

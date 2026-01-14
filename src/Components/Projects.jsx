@@ -64,10 +64,9 @@ const Projects = () => {
                 <p className="font-bold">{record.title}</p>
 
                 <div className="flex items-center gap-1.5 mt-1 text-sm">
-                  <Share className="hover:text-[#0A66C2] h-4" />
-                  <p>Live</p>
-                  <Code className="hover:text-[#0A66C2] h-4" />
-                  <p>Code</p>
+                  
+                  <a href={record.link}><Share className="hover:text-[#0A66C2] h-4" /></a>
+                 
                 </div>
               </div>
             </div>
