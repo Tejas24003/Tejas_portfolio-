@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-import coding from "../assets/pet.jpg";
+import coding from "../assets/download.gif";
+import man from "../assets/man.gif";
 import fle from "../assets/fle.svg";
 import js from "../assets/js.svg";
 import java from "../assets/java.svg";
@@ -84,7 +85,7 @@ const Project = () => {
             <img
               src={coding}
               alt="Coding"
-              className="absolute inset-0 w-full h-full opacity-40 object-cover"
+              className="absolute inset-0 w-full h-full opacity-40 object-left"
             />
             <div className="relative z-10 h-full flex flex-col items-center justify-center md:items-start md:justify-start">
               <div className="p-4 md:ml-6 mt-4 md:mt-6 text-center md:text-left max-w-md">
@@ -101,7 +102,13 @@ const Project = () => {
           </div>
 
           {/* Tech Icons */}
-          <div className="bg-gradient-to-r from-[#1f1a33] to-[#363046] flex flex-wrap rounded-xl shadow-lg p-4 gap-4">
+          <div className="bg-gradient-to-r from-[#1f1a33] to-[#363046] flex flex-wrap rounded-xl shadow-lg p-4 gap-4 relative">
+             <img
+              src={man}
+              alt="man"
+              className="absolute inset-0 w-full h-full opacity-40 object-left"
+            />
+
             {[html5, css, js, react, nodejss, php, git, java, cpp, python, fle].map((icon, idx) => (
               <div key={idx} className="relative group tech-icon">
                 <img src={icon} alt="tech" className="h-14 cursor-pointer hover:scale-105" />
@@ -110,7 +117,7 @@ const Project = () => {
           </div>
 
           {/* Marquee */}
-          <div className="marquee-box bg-white rounded-xl shadow-md overflow-hidden">
+          <div className="marquee-box  rounded-lg shadow-md overflow-hidden border-2 ">
             <div className="marquee-track flex gap-12 px-4 py-3">
               <div className="marquee-group flex gap-12">
                 <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UI Design</span>

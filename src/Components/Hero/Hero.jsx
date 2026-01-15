@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Modal from "../../Components/Modal";
-import codeguy from "../../assets/coding_guy-removebg-preview.png";
+import codeguy from "../../assets/lnadscape.jpg";
 import About from "../About";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Mail, Download } from "lucide-react";
@@ -24,7 +24,7 @@ const Hero = ({ theme, settheme }) => {
       ease: "power3.out",
     });
 
-    // buttons animation
+ 
     gsap.to("#resume", {
       opacity: 1,
       duration: 1,
@@ -74,7 +74,7 @@ const Hero = ({ theme, settheme }) => {
             <img
               src={codeguy}
               alt="Developer Illustration"
-              className="hero-img w-50 md:w-60 xl:w-70 object-contain"
+              className="hero-img w-55 md:w-65 xl:w-75 object-contain rounded-xs"
             />
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -83,18 +83,18 @@ const Hero = ({ theme, settheme }) => {
                 target="_blank"
                 id="resume"
                 rel="noopener noreferrer"
-                className="group opacity-0 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+                className="group opacity-0 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-semibold py-2 px-6 rounded-xl hover:scale-103 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
-                <Download className="group-hover:animate-bounce" />
-                Download Resume
+                <Download  />
+                 Resume
               </a>
 
               <button
                 onClick={() => setShow(true)}
-                className="hero-bt opacity-0 text-center flex justify-center items-center gap-0.5 text-lg border border-amber-50 font-semibold py-2 px-6 rounded-2xl hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+                className="hero-bt opacity-0 text-center flex justify-center items-center gap-0.5 text-lg border border-amber-50 font-semibold py-2 px-6 rounded-xl hover:scale-103 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
                 <Mail className="mr-0.5" />
-                Get In Touch
+           Contact
               </button>
             </div>
           </div>
