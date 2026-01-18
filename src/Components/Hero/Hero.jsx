@@ -83,7 +83,8 @@ const Hero = ({ theme, settheme }) => {
                 target="_blank"
                 id="resume"
                 rel="noopener noreferrer"
-                className="group opacity-0 text-center flex justify-center items-center gap-0.5 text-lg bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-semibold py-2 px-6 rounded-xl hover:scale-103 hover:shadow-lg transition-all duration-300 ease-in-out"
+                className="group opacity-0 text-center flex justify-center items-center gap-0.5 text-lg   bg-gradient-to-r from-[#334969] via-[#30425c] to-[#2a3a52]
+  text-white font-semibold py-2 px-6 rounded-xl hover:scale-103 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
                 <Download  />
                  Resume
