@@ -10,7 +10,7 @@ const Navbar = ({ theme, settheme }) => {
     <div
       className=" w-full h-15 flex justify-center items-center  text-xl ">
       <div className="flex fixed top-0  z-50  justify-between items-center w-full sm:w-1/2 mx-auto px-4 py-3 uppercase">
-       <a href="#home" className="font-bold text-2xl">
+       <a href="#home" className="font-bold text-2xl cursor-pointer">
           Tejas Srivastava
         </a>
 
