@@ -45,6 +45,7 @@ const Navbar = ({ theme, settheme }) => {
               strokeLinecap="round"
               strokeLinejoin="round"
               className="lucide lucide-sun"
+              id="home"
             >
               <circle cx="12" cy="12" r="4"></circle>
               <path d="M12 2v2"></path>
