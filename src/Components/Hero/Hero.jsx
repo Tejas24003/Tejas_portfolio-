@@ -65,7 +65,7 @@ const Hero = ({ theme, settheme }) => {
     <>
       <section
         ref={containerRef}
-        className="w-full min-h-[80vh] flex items-center justify-center px-4 py-10"
+        className="w-full min-h-[85vh] flex items-center justify-center px-4 py-10"
       >
         {show && <Modal onclose={() => setShow(false)} />}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-8">
