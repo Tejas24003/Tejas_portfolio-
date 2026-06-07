@@ -25,7 +25,7 @@ const rec = [
     {
     id: 3,
     title: "Parking Analysis & Management System",
-    description:"It is a full-stack parking management system that allows admins to securely record vehicle entries, automatically calculate parking fees, generate printable receipts, store all data in a database, and display analytics dashboards using charts to track vehicle types, revenue trends, and peak hours for better parking management decisions.",
+    description:"A full-stack application that records vehicle entries, calculates parking fees, generates receipts, stores data in a database, and provides analytics dashboards for tracking revenue, vehicle types, and parking usage.",
     technologies: [" HTML ,", "CSS ,", "JavaScript ,", "PHP ,", "MySQL"],
     image: pr,
     link: "https://github.com/Tejas24003/parking_receipt-",
