@@ -10,7 +10,7 @@ const Modal = ({ onclose }) => {
   }, []);
 
   return (
-    <div className="fixed inset-0  bg-opacity-50 z-50 flex items-center justify-center px-4">
+    <div className="fixed inset-0  bg-opacity-40 z-50 flex items-center justify-center px-4">
       <div className="w-full max-w-md bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-lg relative transition-all duration-300">
 
         {/* Close Button */}
