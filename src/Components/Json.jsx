@@ -34,9 +34,9 @@ const rec = [
     id: 4,
     title: "Apple Store Clone",
     description: "Created a responsive Apple Store clone using React and Tailwind CSS, featuring a modern design, smooth animations, and an intuitive user interface.",
-    technologies: ["React", "Tailwind CSS"],
+    technologies: ["React", ",","Tailwind CSS"],
     image: apple,
-    link: "https://apple-clone.vercel.app/",
+    link: "https://applejs.vercel.app/",
   }
 
 ];
