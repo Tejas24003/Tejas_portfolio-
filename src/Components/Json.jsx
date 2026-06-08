@@ -1,7 +1,7 @@
 import pr from '../assets/prphoto.png'
 import ck from '../assets/projectpic/rgphoto.png'
 import gta from '../assets/projectpic/gtaphoto.png'
-import apple from '../assets/projectpic/apple.png'
+
 
 const rec = [
   {
@@ -30,14 +30,7 @@ const rec = [
     image: pr,
     link: "https://github.com/Tejas24003/parking_receipt-",
   },
-  {
-    id: 4,
-    title: "Apple Store Clone",
-    description: "Created a responsive Apple Store clone using React and Tailwind CSS, featuring a modern design, smooth animations, and an intuitive user interface.",
-    technologies: ["React", ",","Tailwind CSS"],
-    image: apple,
-    link: "https://applejs.vercel.app/",
-  }
+
 
 ];
 
