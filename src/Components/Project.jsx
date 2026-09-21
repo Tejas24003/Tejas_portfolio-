@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import "./Readmore.css";
+
 import coding from "../assets/download.gif";
 import man from "../assets/man.gif";
 import fle from "../assets/fle.svg";
@@ -12,6 +14,7 @@ import nodejss from "../assets/nodejss.svg";
 import php from "../assets/php.svg";
 import python from "../assets/python.svg";
 import react from "../assets/react.svg";
+
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -21,129 +24,462 @@ gsap.registerPlugin(ScrollTrigger);
 const Project = () => {
   const containerRef = useRef(null);
 
-  useGSAP(() => {
-    // Heading
-    gsap.from(".project-heading", {
-      opacity: 0,
-      y: -30,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".project-heading",
-        start: "top 80%", // when heading enters viewport
-      },
-    });
+  useGSAP(
+    () => {
+      // Left heading
+      gsap.from(".project-heading", {
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".project-heading",
+          start: "top 80%",
+        },
+      });
 
-    // Left coding card
-    gsap.from(".project-card", {
-      opacity: 0,
-      x: -50,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".project-card",
-        start: "top 80%",
-      },
-    });
+      // Capability rows
+      gsap.from(".capability-row", {
+        opacity: 0,
+        x: 50,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".capability-list",
+          start: "top 80%",
+        },
+      });
 
-    // Tech icons with stagger
-    gsap.from(".tech-icon", {
-      opacity: 0,
-      scale: 0.5,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "back.out(1.7)",
-      scrollTrigger: {
-        trigger: ".tech-icon",
-        start: "top 85%",
-      },
-    });
+      // Tags
+      gsap.from(".tech-tag", {
+        opacity: 0,
+        y: 15,
+        duration: 0.5,
+        stagger: 0.05,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".capability-list",
+          start: "top 75%",
+        },
+      });
 
-    // Marquee box
-    gsap.from(".marquee-box", {
-      opacity: 0,
-      y: 40,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".marquee-box",
-        start: "top 85%",
-      },
-    });
-  }, { scope: containerRef });
+      // Marquee
+      gsap.from(".marquee-box", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".marquee-box",
+          start: "top 85%",
+        },
+      });
+    },
+    {
+      scope: containerRef,
+    }
+  );
+
+  const technologies = [
+    html5,
+    css,
+    js,
+    react,
+    nodejss,
+    php,
+    git,
+    java,
+    cpp,
+    python,
+    fle,
+  ];
 
   return (
-    <div ref={containerRef}>
-      <h2 className="project-heading text-3xl font-bold text-center m-10">
-        Technologies I Work With:
-      </h2>
+    <section
+      ref={containerRef}
+      className="w-full bg-[#F5F4F0] text-[#111111] px-6 sm:px-10 lg:px-[10%] py-24 sm:py-32"
+    >
+      <div className="max-w-[1500px] mx-auto">
 
-      <div className="w-full flex items-center justify-center px-4 pt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-full">
-        
-          <div className="project-card relative overflow-hidden rounded-xl shadow-md bg-gradient-to-r from-[#1f1a33] to-[#363046] md:row-span-2 h-80 md:h-[22rem]">
-            <img
-              src={coding}
-              alt="Coding"
-              className="absolute inset-0 w-full h-full opacity-40 object-left"
-            />
-            <div className="relative z-10 h-full flex flex-col items-center justify-center md:items-start md:justify-start">
-              <div className="p-4 md:ml-6 mt-4 md:mt-6 text-center md:text-left max-w-md">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-amber-400 md:text-amber-600 drop-shadow-md">
-                  Code Is Craft
-                </h2>
-                <p className="text-amber-50 mt-2 leading-relaxed drop-shadow-sm">
-                  Every line of code is a chance to innovate, solve problems,
-                  and make a difference. <br />
-                  <br />I’m a full-stack web developer focused on building scalable, high-performance applications, handling everything from responsive frontends to secure backends using React, Tailwind CSS, PHP, Java, and Python. I’m driven by continuous learning and meaningful development.
-                </p>
-              </div>
+        {/* ============================================= */}
+        {/* MAIN CAPABILITIES SECTION */}
+        {/* ============================================= */}
+
+        <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-16 lg:gap-24">
+
+          {/* =========================================== */}
+          {/* LEFT SIDE */}
+          {/* =========================================== */}
+
+          <div className="project-heading">
+
+            {/* Section number */}
+
+            <div className="flex items-center gap-3 mb-8">
+
+              <span className="font-mono text-[11px] tracking-[3px] text-[#ff3b16]">
+                02
+              </span>
+
+              <span className="font-mono text-[11px] tracking-[3px] text-[#ff3b16]">
+                /
+              </span>
+
+              <span className="font-mono text-[11px] tracking-[3px] text-[#ff3b16] uppercase">
+                Capabilities
+              </span>
+
             </div>
-          </div>
 
-          {/* Tech Icons */}
-          <div className="bg-gradient-to-r from-[#1f1a33] to-[#363046] flex flex-wrap rounded-xl shadow-lg p-4 gap-4 relative">
-             <img
-              src={man}
-              alt="man"
-              className="absolute inset-0 w-full h-full opacity-40 object-left"
-            />
 
-            {[html5, css, js, react, nodejss, php, git, java, cpp, python, fle].map((icon, idx) => (
-              <div key={idx} className="relative group tech-icon">
-                <img src={icon} alt="tech" className="h-14 cursor-pointer hover:scale-105" />
-              </div>
-            ))}
-          </div>
+            {/* Main heading */}
 
-          {/* Marquee */}
-          <div className="marquee-box  rounded-lg shadow-md overflow-hidden border-2 ">
-            <div className="marquee-track flex gap-12 px-4 py-3">
-              <div className="marquee-group flex gap-12">
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UI Design</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UX Research</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Wireframes</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Prototypes</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Design Systems</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Figma</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Adobe XD</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">User Flows</span>
-              </div>
-              <div className="marquee-group flex gap-12" aria-hidden="true">
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UI Design</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">UX Research</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Wireframes</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Prototypes</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Design Systems</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Figma</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">Adobe XD</span>
-                <span className="text-base sm:text-xl font-bold mt-2 text-gray-700 whitespace-nowrap">User Flows</span>
-              </div>
+            <h2
+              className="
+                font-serif
+                font-normal
+                uppercase
+                leading-[0.85]
+                tracking-[-4px]
+                text-[clamp(4rem,6vw,7rem)]
+              "
+            >
+              <span className="block">
+                TOOLS FOR
+              </span>
+
+              <span className="block">
+                THINKING
+              </span>
+
+              <span className="block text-[#ff3b16]">
+                OUT LOUD.
+              </span>
+            </h2>
+
+
+            {/* Description */}
+
+            <p className="mt-12 max-w-[430px] text-[#55545a] text-base sm:text-lg leading-relaxed">
+              I work across design and development, using code as a
+              material to build thoughtful, scalable and interactive
+              digital experiences.
+            </p>
+
+
+            {/* Existing technology images kept */}
+
+            <div className="flex flex-wrap gap-4 mt-10">
+
+              {technologies.map((icon, index) => (
+                <div
+                  key={index}
+                  className="tech-icon opacity-70 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <img
+                    src={icon}
+                    alt="Technology"
+                    className="w-8 h-8 object-contain grayscale"
+                  />
+                </div>
+              ))}
+
             </div>
+
           </div>
+
+
+          {/* =========================================== */}
+          {/* RIGHT SIDE */}
+          {/* =========================================== */}
+
+          <div className="capability-list border-t border-[#d7d5d0]">
+
+            {/* ================= BUILD ================= */}
+
+            <div className="capability-row grid grid-cols-[60px_1fr] lg:grid-cols-[70px_1fr_1.4fr] gap-6 items-start py-8 border-b border-[#d7d5d0]">
+
+              {/* Number */}
+
+              <span className="font-mono text-[11px] text-[#ff3b16]">
+                01
+              </span>
+
+
+              {/* Title */}
+
+              <h3
+                className="
+                  font-serif
+                  uppercase
+                  font-normal
+                  text-4xl
+                  sm:text-5xl
+                  tracking-[-2px]
+                "
+              >
+                Build
+              </h3>
+
+
+              {/* Tags */}
+
+              <div className="col-start-2 lg:col-start-3 flex flex-wrap justify-start lg:justify-end gap-2">
+
+                <span className="tech-tag capability-tag">
+                  REACT
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  JAVASCRIPT
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  NODE.JS
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  EXPRESS
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  MONGODB
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  REST APIs
+                </span>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= DESIGN ================= */}
+
+            <div className="capability-row grid grid-cols-[60px_1fr] lg:grid-cols-[70px_1fr_1.4fr] gap-6 items-start py-8 border-b border-[#d7d5d0]">
+
+              {/* Number */}
+
+              <span className="font-mono text-[11px] text-[#ff3b16]">
+                02
+              </span>
+
+
+              {/* Title */}
+
+              <h3
+                className="
+                  font-serif
+                  uppercase
+                  font-normal
+                  text-4xl
+                  sm:text-5xl
+                  tracking-[-2px]
+                "
+              >
+                Design
+              </h3>
+
+
+              {/* Tags */}
+
+              <div className="col-start-2 lg:col-start-3 flex flex-wrap justify-start lg:justify-end gap-2">
+
+                <span className="tech-tag capability-tag">
+                  UI DESIGN
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  UX
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  TAILWIND CSS
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  RESPONSIVE DESIGN
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  GSAP
+                </span>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= SOLVE ================= */}
+
+            <div className="capability-row grid grid-cols-[60px_1fr] lg:grid-cols-[70px_1fr_1.4fr] gap-6 items-start py-8 border-b border-[#d7d5d0]">
+
+              {/* Number */}
+
+              <span className="font-mono text-[11px] text-[#ff3b16]">
+                03
+              </span>
+
+
+              {/* Title */}
+
+              <h3
+                className="
+                  font-serif
+                  uppercase
+                  font-normal
+                  text-4xl
+                  sm:text-5xl
+                  tracking-[-2px]
+                "
+              >
+                Solve
+              </h3>
+
+
+              {/* Tags */}
+
+              <div className="col-start-2 lg:col-start-3 flex flex-wrap justify-start lg:justify-end gap-2">
+
+                <span className="tech-tag capability-tag">
+                  JAVA
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  PYTHON
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  SQL
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  DSA
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  REST APIs
+                </span>
+
+                <span className="tech-tag capability-tag">
+                  PROBLEM SOLVING
+                </span>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= CURRENTLY LEARNING ================= */}
+
+            <div className="py-7">
+
+              <p className="font-mono text-[10px] sm:text-xs tracking-[2px] uppercase text-[#66636a]">
+                Always Learning / Currently Exploring:{" "}
+                <span className="text-[#ff3b16]">
+                  AI + Generative AI + SAP
+                </span>
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
+
+
+        {/* ============================================= */}
+        {/* MARQUEE */}
+        {/* ============================================= */}
+
+        <div
+          className="
+            marquee-box
+            mt-20
+            border-y
+            border-[#d7d5d0]
+            overflow-hidden
+          "
+        >
+
+          <div className="marquee-track flex gap-16 px-4 py-5 whitespace-nowrap">
+
+            <div className="marquee-group flex gap-16">
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                UI Design
+              </span>
+
+              <span className="text-[#ff3b16] text-2xl sm:text-4xl">
+                +
+              </span>
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                Development
+              </span>
+
+              <span className="text-[#ff3b16] text-2xl sm:text-4xl">
+                +
+              </span>
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                Problem Solving
+              </span>
+
+              <span className="text-[#ff3b16] text-2xl sm:text-4xl">
+                +
+              </span>
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                AI Experiments
+              </span>
+
+            </div>
+
+
+            <div
+              className="marquee-group flex gap-16"
+              aria-hidden="true"
+            >
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                UI Design
+              </span>
+
+              <span className="text-[#ff3b16] text-2xl sm:text-4xl">
+                +
+              </span>
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                Development
+              </span>
+
+              <span className="text-[#ff3b16] text-2xl sm:text-4xl">
+                +
+              </span>
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                Problem Solving
+              </span>
+
+              <span className="text-[#ff3b16] text-2xl sm:text-4xl">
+                +
+              </span>
+
+              <span className="font-serif text-2xl sm:text-4xl uppercase">
+                AI Experiments
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

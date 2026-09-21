@@ -28,7 +28,7 @@ const About = () => {
         Hello, I&apos;m{" "}
         <span
           ref={nameRef}
-          className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-700 to-indigo-800
+          className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff3b16] via-[#ff4d2e] to-[#ff3b16]
 "
         >
           {/* GSAP will inject text here */}

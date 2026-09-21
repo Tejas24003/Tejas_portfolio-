@@ -1,18 +1,180 @@
-.contact-btn {
-  position: relative;
-}
+/* NAVBAR */
 
-.contact-btn::after {
-  content: "";
-  position: absolute;
+.navbar {
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: white; /* Or any color you prefer */
-  transition: width 0.3s ease;
+
+  width: 100%;
+  height: 90px;
+
+  z-index: 9999;
+
+  pointer-events: none;
+
+  color: #111;
+  background: transparent;
+
+  transition: color 0.3s ease;
 }
 
-.contact-btn:hover::after {
-  width: 100%;
+.navbar.dark {
+  color: #fff;
+}
+
+
+/* AVAILABLE FOR SUMMER */
+
+.availability {
+  position: absolute;
+
+  top: 24px;
+  left: 10%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: monospace;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+
+  background: #ff3b16;
+
+  border-radius: 50%;
+
+  display: inline-block;
+}
+
+
+/* RIGHT SIDE */
+
+.navbar-right {
+  position: absolute;
+
+  top: 20px;
+  right: 7%;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+
+  pointer-events: auto;
+}
+
+
+/* OPEN TO WORK */
+
+.open-work {
+  width: 62px;
+  height: 62px;
+
+  border: 1px solid rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  line-height: 12px;
+
+  text-align: center;
+
+  transform: rotate(12deg);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.dark .open-work {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.open-work:hover {
+  transform: rotate(0deg);
+}
+
+
+/* THEME BUTTON */
+
+.theme-button {
+  width: 38px;
+  height: 38px;
+
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  transition: transform 0.3s ease;
+}
+
+.theme-button:hover {
+  transform: rotate(20deg);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .availability {
+    left: 20px;
+    top: 20px;
+
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+
+  .availability-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .navbar-right {
+    right: 20px;
+    top: 15px;
+  }
+
+  .open-work {
+    width: 52px;
+    height: 52px;
+
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .theme-button {
+    display: none;
+  }
 }

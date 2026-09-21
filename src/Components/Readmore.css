@@ -1,3 +1,46 @@
 .readmore{
     color: blue;
 }
+
+
+.marquee-track {
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-box:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.capability-tag {
+  border: 1px solid #d7d5d0;
+  padding: 7px 13px;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #333238;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.capability-tag:hover {
+  border-color: #ff3b16;
+  color: #ff3b16;
+}
+
+@media (max-width: 768px) {
+  .capability-tag {
+    font-size: 9px;
+    padding: 6px 10px;
+  }
+}
