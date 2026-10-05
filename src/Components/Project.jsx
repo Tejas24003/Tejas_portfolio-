@@ -98,7 +98,15 @@ const Project = () => {
   return (
     <section
       ref={containerRef}
-      className="w-full bg-[#F5F4F0] text-[#111111] px-6 sm:px-10 lg:px-[10%] py-24 sm:py-32"
+      className="
+        w-full
+        text-current
+        px-6
+        sm:px-10
+        lg:px-[10%]
+        py-24
+        sm:py-32
+      "
     >
       <div className="max-w-[1500px] mx-auto">
 
@@ -106,31 +114,21 @@ const Project = () => {
         {/* MAIN CAPABILITIES SECTION */}
         {/* ============================================= */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-16 lg:gap-24">
+        <div
+          className="
+            grid
+            grid-cols-1
+            lg:grid-cols-[0.75fr_1.25fr]
+            gap-16
+            lg:gap-24
+          "
+        >
 
           {/* =========================================== */}
           {/* LEFT SIDE */}
           {/* =========================================== */}
 
           <div className="project-heading">
-
-            {/* Section number */}
-
-            <div className="flex items-center gap-3 mb-8">
-
-              <span className="font-mono text-[11px] tracking-[3px] text-[#ff3b16]">
-                02
-              </span>
-
-              <span className="font-mono text-[11px] tracking-[3px] text-[#ff3b16]">
-                /
-              </span>
-
-              <span className="font-mono text-[11px] tracking-[3px] text-[#ff3b16] uppercase">
-                Capabilities
-              </span>
-
-            </div>
 
 
             {/* Main heading */}
@@ -145,6 +143,7 @@ const Project = () => {
                 text-[clamp(4rem,6vw,7rem)]
               "
             >
+
               <span className="block">
                 TOOLS FOR
               </span>
@@ -156,31 +155,53 @@ const Project = () => {
               <span className="block text-[#ff3b16]">
                 OUT LOUD.
               </span>
+
             </h2>
 
 
             {/* Description */}
 
-            <p className="mt-12 max-w-[430px] text-[#55545a] text-base sm:text-lg leading-relaxed">
+            <p
+              className="
+                mt-12
+                max-w-[430px]
+                text-current
+                opacity-70
+                text-base
+                sm:text-lg
+                leading-relaxed
+              "
+            >
               I work across design and development, using code as a
               material to build thoughtful, scalable and interactive
               digital experiences.
             </p>
 
 
-            {/* Existing technology images kept */}
+            {/* Technology images */}
 
             <div className="flex flex-wrap gap-4 mt-10">
 
               {technologies.map((icon, index) => (
                 <div
                   key={index}
-                  className="tech-icon opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  className="
+                    tech-icon
+                    opacity-70
+                    hover:opacity-100
+                    transition-opacity
+                    duration-300
+                  "
                 >
                   <img
                     src={icon}
                     alt="Technology"
-                    className="w-8 h-8 object-contain grayscale"
+                    className="
+                      w-8
+                      h-8
+                      object-contain
+                      grayscale
+                    "
                   />
                 </div>
               ))}
@@ -194,11 +215,29 @@ const Project = () => {
           {/* RIGHT SIDE */}
           {/* =========================================== */}
 
-          <div className="capability-list border-t border-[#d7d5d0]">
+          <div
+            className="
+              capability-list
+              border-t
+              border-current/20
+            "
+          >
 
             {/* ================= BUILD ================= */}
 
-            <div className="capability-row grid grid-cols-[60px_1fr] lg:grid-cols-[70px_1fr_1.4fr] gap-6 items-start py-8 border-b border-[#d7d5d0]">
+            <div
+              className="
+                capability-row
+                grid
+                grid-cols-[60px_1fr]
+                lg:grid-cols-[70px_1fr_1.4fr]
+                gap-6
+                items-start
+                py-8
+                border-b
+                border-current/20
+              "
+            >
 
               {/* Number */}
 
@@ -225,7 +264,17 @@ const Project = () => {
 
               {/* Tags */}
 
-              <div className="col-start-2 lg:col-start-3 flex flex-wrap justify-start lg:justify-end gap-2">
+              <div
+                className="
+                  col-start-2
+                  lg:col-start-3
+                  flex
+                  flex-wrap
+                  justify-start
+                  lg:justify-end
+                  gap-2
+                "
+              >
 
                 <span className="tech-tag capability-tag">
                   REACT
@@ -258,7 +307,19 @@ const Project = () => {
 
             {/* ================= DESIGN ================= */}
 
-            <div className="capability-row grid grid-cols-[60px_1fr] lg:grid-cols-[70px_1fr_1.4fr] gap-6 items-start py-8 border-b border-[#d7d5d0]">
+            <div
+              className="
+                capability-row
+                grid
+                grid-cols-[60px_1fr]
+                lg:grid-cols-[70px_1fr_1.4fr]
+                gap-6
+                items-start
+                py-8
+                border-b
+                border-current/20
+              "
+            >
 
               {/* Number */}
 
@@ -285,7 +346,17 @@ const Project = () => {
 
               {/* Tags */}
 
-              <div className="col-start-2 lg:col-start-3 flex flex-wrap justify-start lg:justify-end gap-2">
+              <div
+                className="
+                  col-start-2
+                  lg:col-start-3
+                  flex
+                  flex-wrap
+                  justify-start
+                  lg:justify-end
+                  gap-2
+                "
+              >
 
                 <span className="tech-tag capability-tag">
                   UI DESIGN
@@ -314,7 +385,19 @@ const Project = () => {
 
             {/* ================= SOLVE ================= */}
 
-            <div className="capability-row grid grid-cols-[60px_1fr] lg:grid-cols-[70px_1fr_1.4fr] gap-6 items-start py-8 border-b border-[#d7d5d0]">
+            <div
+              className="
+                capability-row
+                grid
+                grid-cols-[60px_1fr]
+                lg:grid-cols-[70px_1fr_1.4fr]
+                gap-6
+                items-start
+                py-8
+                border-b
+                border-current/20
+              "
+            >
 
               {/* Number */}
 
@@ -341,7 +424,17 @@ const Project = () => {
 
               {/* Tags */}
 
-              <div className="col-start-2 lg:col-start-3 flex flex-wrap justify-start lg:justify-end gap-2">
+              <div
+                className="
+                  col-start-2
+                  lg:col-start-3
+                  flex
+                  flex-wrap
+                  justify-start
+                  lg:justify-end
+                  gap-2
+                "
+              >
 
                 <span className="tech-tag capability-tag">
                   JAVA
@@ -376,11 +469,23 @@ const Project = () => {
 
             <div className="py-7">
 
-              <p className="font-mono text-[10px] sm:text-xs tracking-[2px] uppercase text-[#66636a]">
+              <p
+                className="
+                  font-mono
+                  text-[10px]
+                  sm:text-xs
+                  tracking-[2px]
+                  uppercase
+                  text-current
+                  opacity-60
+                "
+              >
                 Always Learning / Currently Exploring:{" "}
+
                 <span className="text-[#ff3b16]">
                   AI + Generative AI + SAP
                 </span>
+
               </p>
 
             </div>
@@ -399,12 +504,23 @@ const Project = () => {
             marquee-box
             mt-20
             border-y
-            border-[#d7d5d0]
+            border-current/20
             overflow-hidden
           "
         >
 
-          <div className="marquee-track flex gap-16 px-4 py-5 whitespace-nowrap">
+          <div
+            className="
+              marquee-track
+              flex
+              gap-16
+              px-4
+              py-5
+              whitespace-nowrap
+            "
+          >
+
+            {/* First group */}
 
             <div className="marquee-group flex gap-16">
 
@@ -438,6 +554,8 @@ const Project = () => {
 
             </div>
 
+
+            {/* Duplicate group for marquee */}
 
             <div
               className="marquee-group flex gap-16"
@@ -479,6 +597,7 @@ const Project = () => {
         </div>
 
       </div>
+
     </section>
   );
 };

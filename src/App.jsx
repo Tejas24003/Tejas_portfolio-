@@ -6,7 +6,7 @@ import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 
 const App = () => {
-  const [theme, settheme] = useState("light");
+  const [theme, settheme] = useState("dark");
 
   return (
     <>

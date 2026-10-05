@@ -201,7 +201,7 @@ const Footer = () => {
             {/* Center */}
 
             <p className="font-mono text-[10px] tracking-[2px] uppercase ">
-               Built with Care - Yo
+               Built with Time - Yo-Yo
             </p>
 
 
