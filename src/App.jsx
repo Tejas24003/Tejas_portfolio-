@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 
 
 const App = () => {
+<<<<<<< Updated upstream
 const [theme, settheme] = useState('lucide-moon');
   return (
     <>
@@ -26,5 +27,29 @@ const [theme, settheme] = useState('lucide-moon');
     </>
   )
 }
+=======
+  const [theme, settheme] = useState("light");
+
+  return (
+    <div
+      className={`min-h-screen transition-colors duration-500 ${
+        theme === "light"
+          ? "bg-white text-black"
+          : "bg-[#0d0d0f] text-white"
+      }`}
+    >
+      <Navbar theme={theme} settheme={settheme} />
+
+      <Hero theme={theme} settheme={settheme} />
+
+      <Project />
+
+      <Projects />
+
+      <Footer />
+    </div>
+  );
+};
+>>>>>>> Stashed changes
 
 export default App
