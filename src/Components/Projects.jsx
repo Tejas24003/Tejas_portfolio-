@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
 
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("Web Development");
 
 const categories = [
   
