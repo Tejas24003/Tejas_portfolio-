@@ -16,14 +16,14 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
 const categories = [
-  "All",
+  
   "Web Development",
   "AI/ML",
   "SAP",
 ];
 
 const filteredRecords =
-  activeCategory === "All"
+  activeCategory === "Web Development"
     ? records
     : records.filter(
         (record) => record.category === activeCategory
