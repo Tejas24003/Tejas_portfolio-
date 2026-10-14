@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef ,useState} from "react";
 import "./Readmore.css";
 import records from "./Json";
 import { ArrowUpRight } from "lucide-react";
@@ -9,7 +9,25 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
 const Projects = () => {
+
+  const [activeCategory, setActiveCategory] = useState("All");
+
+const categories = [
+  "All",
+  "Web Development",
+  "AI/ML",
+  "SAP",
+];
+
+const filteredRecords =
+  activeCategory === "All"
+    ? records
+    : records.filter(
+        (record) => record.category === activeCategory
+      );
   const containerRef = useRef(null);
 
   useGSAP(
@@ -146,41 +164,24 @@ const Projects = () => {
           "
         >
 
-          <div className="flex flex-wrap items-center gap-7">
-
-            <span
-              className="
-                bg-[#f5f4f0]
-                text-[#111]
-                px-5
-                py-3
-                font-mono
-                text-[10px]
-                tracking-[2px]
-                uppercase
-              "
-            >
-              All
-            </span>
-
-            <span className="font-mono text-[10px] tracking-[2px] uppercase text-gray-400">
-              Web Development
-            </span>
-
-            <span className="font-mono text-[10px] tracking-[2px] uppercase text-gray-400">
-              AI/ML
-            </span>
-
-            <span className="font-mono text-[10px] tracking-[2px] uppercase text-gray-400">
-             SAP
-            </span>
-
-            
-
-          </div>
+          <div className="flex flex-wrap items-center gap-4 sm:gap-7">
+  {categories.map((category) => (
+    <button
+      key={category}
+      onClick={() => setActiveCategory(category)}
+      className={`px-4 py-3 font-mono text-[10px] tracking-[2px] uppercase transition-all duration-300 ${
+        activeCategory === category
+          ? "bg-[#f5f4f0] text-[#111]"
+          : "text-gray-400 hover:text-white"
+      }`}
+    >
+      {category}
+    </button>
+  ))}
+</div>
 
           <span className="font-mono text-[10px] tracking-[2px] uppercase text-gray-400">
-            {records.length} Projects
+           {filteredRecords.length} Projects
           </span>
 
         </div>
@@ -192,7 +193,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 mt-12">
 
-          {records.map((record, index) => {
+          {filteredRecords.map((record, index) => {
 
             const projectNumber = String(index + 1).padStart(2, "0");
 
